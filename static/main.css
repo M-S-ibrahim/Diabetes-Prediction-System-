@@ -1,0 +1,116 @@
+/* main.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #444;
+  font-size: 24px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: 2px solid #ff758c;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+legend {
+  font-weight: bold;
+  color: #ff758c;
+  padding: 0 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ff758c;
+  box-shadow: 0 0 8px rgba(255, 117, 140, 0.5);
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.form-actions button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  border: none;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.form-actions button:hover {
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
+  transform: scale(1.05);
+}
+
+/* Prediction result styling */
+.result-container {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
